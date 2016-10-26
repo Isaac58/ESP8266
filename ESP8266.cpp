@@ -152,7 +152,6 @@ bool ESP8266::joinAP(char *ssid, char *ssid_pass)
         {
             conn = (getResponse(NULL, AT_RESPONSE_OK, NULL, NULL, NULL, 5000) > 0);
         }
-
         if (!conn)
         {
             quitAP();
